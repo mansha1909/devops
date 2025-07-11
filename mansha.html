@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple JS Functions</title>
+</head>
+<body>
+
+  <h1>JavaScript Function Examples</h1>
+
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="addNumbers()">Add Numbers</button>
+
+  <p id="text">This is some text.</p>
+  <p id="sumResult"></p>
+
+  <script>
+    // Function 1: Show alert
+    function showAlert() {
+      alert("Hello! This is an alert.");
+    }
+
+    // Function 2: Change text on the page
+    function changeText() {
+      document.getElementById("text").textContent = "The text has been changed!";
+    }
+
+    // Function 3: Add numbers and show result
+    function addNumbers() {
+      let a = 5;
+      let b = 10;
+      let sum = a + b;
+      document.getElementById("sumResult").textContent = "Sum: " + sum;
+    }
+  </script>
+
+</body>
+</html>
